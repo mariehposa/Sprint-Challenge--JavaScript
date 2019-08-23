@@ -52,3 +52,5 @@ function myFunction() {
   nestedFunction();
 }
 myFunction();
+
+//`nestedfunction()` can access the variable `internal`because nestedFunction() is a function and is declared within the scope of myFunction() it therefore has access to the state of myFunction(). let's say myfunction is the dad and nestedFunction() is the child which have access to his dad.
