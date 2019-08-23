@@ -31,3 +31,22 @@
 // console.log(cuboid.surfaceArea()); // 130
 
 
+class CuboidMaker{
+  constructor(object){
+    this.length = object.length;
+    this.width = object.width;
+    this.height = object.height;
+  }
+  volume(){
+    calculator = this.length * this.width * this.height;
+  }
+  surfaceArea(){
+    calculator = 2 * ((this.length * this.width) + (this.length * this.height) + (this.width * this.height));
+  } 
+}
+
+const calculate = new CuboidMaker({
+  length: 4,
+  width: 5,
+  height: 5
+})
