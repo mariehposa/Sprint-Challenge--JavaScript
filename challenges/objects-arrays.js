@@ -18,6 +18,14 @@ let tyron = {
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
+let stegosaurus = {
+  name: "stegosaurus",
+  diet: "herbivorous",
+  weight: "2000kg",
+  length: "9m",
+  period: "Late Jurassic",
+}
+
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
 
 // Using your dinosaur objects, log answers to these questions:
