@@ -52,7 +52,9 @@ console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-tyrannosaurus.roar = () => `RAWERSRARARWERSARARARRRR!`
+tyrannosaurus.roar = () => { 
+  return `RAWERSRARARWERSARARARRRR!`
+}
 console.log(tyrannosaurus.roar());
 
 
@@ -90,7 +92,7 @@ console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = graduates.filter(graduate => graduate.university.includes("Uni")).map(grad => grad.university);
+const uni = graduates.filter(graduate => graduate.university.includes("Uni"));
 console.log(uni);
 
 
@@ -146,9 +148,8 @@ console.log(lowerPopulation);
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = zooAnimals.map(animal => animal.population)
-.reduce((accumulator, current) => {
-  return accumulator + current
+const populationTotal = zooAnimals.reduce((accumulator, animal) => {
+  return accumulator + animal.population
 }, 0);
 
 console.log(populationTotal);
